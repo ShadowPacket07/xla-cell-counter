@@ -32,21 +32,26 @@ xla_cell_counter/
 │   └── ...
 ├── .gitignore              # Cấu hình loại trừ các file tạm và môi trường ảo
 └── README.md               # Tài liệu hướng dẫn và thông tin bản quyền dự án
-🚀 Hướng dẫn Cài đặt & Sử dụng
-1. Yêu cầu hệ thống
-Python 3.8 trở lên.
+```
 
-Các thư viện xử lý ảnh và giao diện: opencv-python, numpy, matplotlib (hoặc PySide6/tkinter tùy cấu hình GUI).
+---
 
-2. Cài đặt
+## 🚀 Hướng dẫn Cài đặt & Sử dụng
+
+### 1. Yêu cầu hệ thống
+* Python `3.8` trở lên.
+* Các thư viện xử lý ảnh và giao diện: `opencv-python`, `numpy`, `matplotlib` (hoặc `PySide6`/`tkinter` tùy cấu hình GUI).
+
+### 2. Cài đặt
+
 Clone kho lưu trữ về máy cá nhân:
-
-Bash
+```bash
 git clone [https://github.com/ShadowPacket07/xla-cell-counter.git](https://github.com/ShadowPacket07/xla-cell-counter.git)
 cd xla-cell-counter
-Khởi tạo môi trường ảo và cài đặt thư viện:
+```
 
-Bash
+Khởi tạo môi trường ảo và cài đặt thư viện:
+```bash
 python -m venv venv
 # Kích hoạt môi trường ảo trên Windows:
 venv\Scripts\activate
@@ -55,30 +60,38 @@ source venv/bin/activate
 
 # Cài đặt các thư viện cần thiết:
 pip install opencv-python numpy matplotlib
-3. Khởi chạy ứng dụng
-Bash
+```
+
+### 3. Khởi chạy ứng dụng
+```bash
 python app.py
-🧪 Tập dữ liệu kiểm thử (Dataset)
-Thư mục dataset/ đi kèm dự án bao gồm 3 nhóm ảnh chính để đánh giá độ ổn định của thuật toán:
+```
 
-Fluorescence Microscopy (cell_*_fluo.png): Ảnh tế bào phát광 trên nền tối, kiểm thử khả năng tách biên khi mật độ tế bào dày.
+---
 
-Stained Cells (cell_*_stain.png): Ảnh tế bào nhuộm mô học với độ tương phản nền phức tạp.
+## 🧪 Tập dữ liệu kiểm thử (Dataset)
 
-Real-world Objects (an-dau-phong-*.png): Ảnh vật thể thực tế dùng để kiểm chứng tính tổng quát của thuật toán phân đoạn.
+Thư mục `dataset/` đi kèm dự án bao gồm 3 nhóm ảnh chính để đánh giá độ ổn định của thuật toán:
+1. **Fluorescence Microscopy (`cell_*_fluo.png`):** Ảnh tế bào phát quang trên nền tối, kiểm thử khả năng tách biên khi mật độ tế bào dày.
+2. **Stained Cells (`cell_*_stain.png`):** Ảnh tế bào nhuộm mô học với độ tương phản nền phức tạp.
+3. **Real-world Objects (`an-dau-phong-*.png`):** Ảnh vật thể thực tế dùng để kiểm chứng tính tổng quát của thuật toán phân đoạn.
 
-⚖️ Tuyên bố Bản quyền & Liêm chính Học thuật (Copyright & Academic Integrity)
-Dự án XLA Cell Counter được phát triển độc lập bởi Nguyễn Phan Bảo Nguyên cho mục đích học tập, nghiên cứu Xử lý ảnh số và xây dựng hồ sơ năng lực cá nhân (Personal Portfolio).
+---
 
-Nghiêm cấm đạo nhái (No Plagiarism): Nghiêm cấm mọi hành vi sao chép mã nguồn, chỉnh sửa tên tác giả hoặc sử dụng toàn bộ/một phần dự án này để nộp làm bài tập lớn, đồ án môn học dưới danh nghĩa cá nhân khác.
+## ⚖️ Tuyên bố Bản quyền & Liêm chính Học thuật (Copyright & Academic Integrity)
 
-Quyền sử dụng tham khảo: Bạn được phép xem mã nguồn để tham khảo kiến thức thuật toán. Nếu trích dẫn hoặc phát triển tiếp từ mã nguồn này, bắt buộc phải giữ nguyên thông tin tác giả gốc (Attribution) và dẫn nguồn trực tiếp về repository này.
+Dự án **XLA Cell Counter** được phát triển độc lập bởi **Nguyễn Phan Bảo Nguyên** cho mục đích học tập, nghiên cứu Xử lý ảnh số và xây dựng hồ sơ năng lực cá nhân (Personal Portfolio).
 
-👨‍💻 Tác giả (Author)
-Họ và tên: Nguyễn Phan Bảo Nguyên
+* **Nghiêm cấm đạo nhái (No Plagiarism):** Nghiêm cấm mọi hành vi sao chép mã nguồn, chỉnh sửa tên tác giả hoặc sử dụng toàn bộ/một phần dự án này để nộp làm bài tập lớn, đồ án môn học dưới danh nghĩa cá nhân khác.
+* **Quyền sử dụng tham khảo:** Bạn được phép xem mã nguồn để tham khảo kiến thức thuật toán. Nếu trích dẫn hoặc phát triển tiếp từ mã nguồn này, bắt buộc phải giữ nguyên thông tin tác giả gốc (Attribution) và dẫn nguồn trực tiếp về repository này.
 
-GitHub: @ShadowPacket07
+---
 
-Email: iuhcoderk20@gmail.com
+## 👨‍💻 Tác giả (Author)
 
-© 2026 Nguyễn Phan Bảo Nguyên. All Rights Reserved.
+* **Họ và tên:** Nguyễn Phan Bảo Nguyên
+* **GitHub:** [@ShadowPacket07](https://github.com/ShadowPacket07)
+* **Email:** iuhcoderk20@gmail.com
+
+---
+*© 2026 Nguyễn Phan Bảo Nguyên. All Rights Reserved.*
